@@ -4,7 +4,7 @@ REGEX = /hbt{2,}n/
 def generate_inputs(count = 20)
   inputs = []
   count.times do
-    prefix = ['h', 'hb', 'hbt', 'hbtn', 'hbttn', 'hbttttn'].sample
+    prefix = ['h', 'hb', 'hbt', 'hbtn', 'hbttn', 'hbttttn', 'hbttttttttttn'].sample
     noise = (0..rand(5)).map { ('a'..'z').to_a.sample }.join
     suffix = ['n', '', 'x', 'ttn', 'ttttn'].sample
     inputs << "#{noise}#{prefix}#{suffix}"
