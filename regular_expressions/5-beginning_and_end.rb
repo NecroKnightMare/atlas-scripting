@@ -16,3 +16,7 @@ puts ARGV[0].scan(/^h.n$/).join
 #root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./5-beginning_and_end.rb hhn
 
 #hhn
+
+#root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./5-beginning_and_end.rb h9n
+
+#h9n
