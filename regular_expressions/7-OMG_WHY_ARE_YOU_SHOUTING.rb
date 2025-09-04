@@ -20,3 +20,7 @@ end
 #root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "CAN YOU HEAR ME NOW?" | cat -e
 
 #CANYOUHEARMENOW$
+
+#root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./7-OMG_WHY_ARE_YOU_SHOUTING.rb '''i Hope Bobby eaTs Nutella - no one ever said'''
+
+#HBTN
