@@ -1,5 +1,13 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/^h.n$/).join
+input = ARGV[0]
+if input.nil?
+  puts input
+else
+  puts input.scan(/^h.n$/).join
+end
+
+
+#puts ARGV[0][:scan](/^h.n$/).join
 
 #root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./5-beginning_and_end.rb hn
 
