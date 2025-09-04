@@ -1,23 +1,23 @@
 #!/usr/bin/env ruby
-REGEX = /hbt{2,}n/
+#REGEX = /hbt{2,}n/
 
-def generate_inputs(count = 20)
-  inputs = []
-  count.times do
-    prefix = ['h', 'hb', 'hbt', 'hbtn', 'hbttn', 'hbttttn', 'hbttttttttttn'].sample
-    noise = (0..rand(5)).map { ('a'..'z').to_a.sample }.join
-    suffix = ['n', '', 'x', 'ttn', 'ttttn'].sample
-    inputs << "#{noise}#{prefix}#{suffix}"
-  end
-  inputs
-end
+#def generate_inputs(count = 20)
+#  inputs = []
+#  count.times do
+#    prefix = ['h', 'hb', 'hbt', 'hbtn', 'hbttn', 'hbttttn', 'hbttttttttttn'].sample
+#    noise = (0..rand(5)).map { ('a'..'z').to_a.sample }.join
+#    suffix = ['n', '', 'x', 'ttn', 'ttttn'].sample
+#    inputs << "#{noise}#{prefix}#{suffix}"
+#  end
+#  inputs
+#end
 
 # Run tests
-puts "Testing REGEX: #{REGEX.inspect}"
-generate_inputs.each do |input|
-  match = input.scan(REGEX).join
-  puts "#{input.ljust(20)} => #{match.empty? ? 'no match' : "#{match}"}"
-end
+#puts "Testing REGEX: #{REGEX.inspect}"
+#generate_inputs.each do |input|
+#match = input.scan(REGEX).join
+# puts "#{input.ljust(20)} => #{match.empty? ? 'no match' : "#{match}"}"
+#end
 
 #root@NecroKnightMare:/Atlas-T5/atlas-scripting/regular_expressions# ./4-repetition_token_3.rb hbttttt
 
@@ -44,7 +44,7 @@ end
 #udpwhbn              => no match
 
 
-#puts ARGV[0].scan(/hbt{2,}/).join
+puts ARGV[0].scan(/hbt{2,}n/).join
 
 #root@NecroKnightMare:Atlas-T5/atlas-scripting/regular_expressions# ./4-repetition_token_3.rb hbtt
 
