@@ -44,7 +44,7 @@
 #udpwhbn              => no match
 
 
-puts ARGV[0].scan(/hbt{2,}n/).join
+puts ARGV[0].scan(/hbt*n/).join
 
 #root@NecroKnightMare:Atlas-T5/atlas-scripting/regular_expressions# ./4-repetition_token_3.rb hbtt
 
